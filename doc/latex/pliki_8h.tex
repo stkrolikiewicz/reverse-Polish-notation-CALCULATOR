@@ -1,0 +1,127 @@
+\hypertarget{pliki_8h}{}\doxysection{Dokumentacja pliku pliki.\+h}
+\label{pliki_8h}\index{pliki.h@{pliki.h}}
+
+
+Plik nagłówkowy modułu Pliki.  
+
+
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+Wykres zależności załączania dla pliki.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{pliki_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pliki_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{pliki_8h_afa209e98a67b5d5017a1bb0e32836e75}{pobierz\+Zawartosc}} (string \mbox{\hyperlink{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}{nazwa\+\_\+pliku}})
+\begin{DoxyCompactList}\small\item\em Funkcja, która pobiera zawartość pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pliki_8h_a9c78779fb9147fa778a4fa5f22a00945}{usun\+Zawartosc}} (string \mbox{\hyperlink{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}{nazwa\+\_\+pliku}})
+\begin{DoxyCompactList}\small\item\em Funkcja, która usuwa zawartość pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pliki_8h_a46d15498dbe01becc5eb7874f69319cc}{edytuj\+Zawartosc}} (string \mbox{\hyperlink{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}{nazwa\+\_\+pliku}})
+\begin{DoxyCompactList}\small\item\em Funkcja, która edytuje zawartość pliku. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{pliki_8h_a1a510131d1f12f30cd501655dda7b8b9}{usun\+Plik}} (string \mbox{\hyperlink{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}{nazwa\+\_\+pliku}})
+\begin{DoxyCompactList}\small\item\em Funkcja, która usuwa plik tekstowy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu Pliki. 
+
+Zawiera on deklaracje funkcji potrzebnych do działania na plikach tekstowych. 
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{pliki_8h_a46d15498dbe01becc5eb7874f69319cc}\label{pliki_8h_a46d15498dbe01becc5eb7874f69319cc}} 
+\index{pliki.h@{pliki.h}!edytujZawartosc@{edytujZawartosc}}
+\index{edytujZawartosc@{edytujZawartosc}!pliki.h@{pliki.h}}
+\doxysubsubsection{\texorpdfstring{edytujZawartosc()}{edytujZawartosc()}}
+{\footnotesize\ttfamily void edytuj\+Zawartosc (\begin{DoxyParamCaption}\item[{string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która edytuje zawartość pliku. 
+
+Deklaracja funkcji, która ma edytować zawartość pliku. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która ma edytuje zawartość pliku. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pliki_8h_afa209e98a67b5d5017a1bb0e32836e75}\label{pliki_8h_afa209e98a67b5d5017a1bb0e32836e75}} 
+\index{pliki.h@{pliki.h}!pobierzZawartosc@{pobierzZawartosc}}
+\index{pobierzZawartosc@{pobierzZawartosc}!pliki.h@{pliki.h}}
+\doxysubsubsection{\texorpdfstring{pobierzZawartosc()}{pobierzZawartosc()}}
+{\footnotesize\ttfamily string pobierz\+Zawartosc (\begin{DoxyParamCaption}\item[{string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która pobiera zawartość pliku. 
+
+Deklaracja funkcji, która ma pobrać i zwrócić zawartość pliku w postaci napisu. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zawartosc napis przechwujący zawartość pliku tekstowego
+\end{DoxyReturn}
+Definicja funkcji, która pobiera i zwraca zawartość pliku w postaci napisu. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+zawartosc napis przechwujący zawartość pliku tekstowego 
+\end{DoxyReturn}
+\mbox{\Hypertarget{pliki_8h_a1a510131d1f12f30cd501655dda7b8b9}\label{pliki_8h_a1a510131d1f12f30cd501655dda7b8b9}} 
+\index{pliki.h@{pliki.h}!usunPlik@{usunPlik}}
+\index{usunPlik@{usunPlik}!pliki.h@{pliki.h}}
+\doxysubsubsection{\texorpdfstring{usunPlik()}{usunPlik()}}
+{\footnotesize\ttfamily void usun\+Plik (\begin{DoxyParamCaption}\item[{string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która usuwa plik tekstowy. 
+
+Deklaracja funkcji, która ma usunąć podany plik tekstowy 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pliki_8h_a9c78779fb9147fa778a4fa5f22a00945}\label{pliki_8h_a9c78779fb9147fa778a4fa5f22a00945}} 
+\index{pliki.h@{pliki.h}!usunZawartosc@{usunZawartosc}}
+\index{usunZawartosc@{usunZawartosc}!pliki.h@{pliki.h}}
+\doxysubsubsection{\texorpdfstring{usunZawartosc()}{usunZawartosc()}}
+{\footnotesize\ttfamily void usun\+Zawartosc (\begin{DoxyParamCaption}\item[{string}]{nazwa\+\_\+pliku }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która usuwa zawartość pliku. 
+
+Deklaracja funkcji, która ma usunąć zawartość pliku. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która usuwa zawartość pliku. 
+\begin{DoxyParams}{Parametry}
+{\em nazwa\+\_\+pliku} & ścieżka docelowego pliku tekstowego \\
+\hline
+\end{DoxyParams}

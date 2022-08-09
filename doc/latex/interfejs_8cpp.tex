@@ -1,0 +1,93 @@
+\hypertarget{interfejs_8cpp}{}\doxysection{Dokumentacja pliku interfejs.\+cpp}
+\label{interfejs_8cpp}\index{interfejs.cpp@{interfejs.cpp}}
+
+
+Plik implementacji modułu Interfejs.  
+
+
+{\ttfamily \#include \char`\"{}interfejs.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funkcje.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}lista.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Wykres zależności załączania dla interfejs.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{interfejs_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{interfejs_8cpp_a36ad170338d7feb540a9ce2f1f8bb1b0}{intro}} ()
+\begin{DoxyCompactList}\small\item\em Intro. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfejs_8cpp_ae1d0d8a9b2b6810d9e2a55d49a83f1af}{wroc\+Do\+Menu}} ()
+\begin{DoxyCompactList}\small\item\em Powrót do Menu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfejs_8cpp_ab062c055c3d45894ec66c4d911789fcb}{wroc\+Do\+Modyfikacji}} ()
+\begin{DoxyCompactList}\small\item\em Powrót do wyboru opcji modyfikacji zmiennych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{interfejs_8cpp_a358d2e2397ca11ccd17553e3c40e7901}{exit}} ()
+\begin{DoxyCompactList}\small\item\em Exit. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik implementacji modułu Interfejs. 
+
+Zawiera on definicje podstawowych funkcji interfejsu, zawartych w pliku nagłowkowym, które mają na celu usprawnienie poruszania się użytkownika po aplikacji 
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{interfejs_8cpp_a358d2e2397ca11ccd17553e3c40e7901}\label{interfejs_8cpp_a358d2e2397ca11ccd17553e3c40e7901}} 
+\index{interfejs.cpp@{interfejs.cpp}!exit@{exit}}
+\index{exit@{exit}!interfejs.cpp@{interfejs.cpp}}
+\doxysubsubsection{\texorpdfstring{exit()}{exit()}}
+{\footnotesize\ttfamily void exit (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Exit. 
+
+Deklaracja funkcji, która kończy działanie programu.
+
+Funkcja, która kończy działanie programu. Czyszczenie ekranu.
+
+\mbox{\hyperlink{struct_zmienna}{Zmienna}} {\bfseries{a{\ttfamily },}} która przechowuje znak wpisany przez użytkownika.
+
+Pętla, która ma powtarza się dopóki użytkownik nie zdeycduje się, czy chce zakończyc działanie programu, czy nie.\mbox{\Hypertarget{interfejs_8cpp_a36ad170338d7feb540a9ce2f1f8bb1b0}\label{interfejs_8cpp_a36ad170338d7feb540a9ce2f1f8bb1b0}} 
+\index{interfejs.cpp@{interfejs.cpp}!intro@{intro}}
+\index{intro@{intro}!interfejs.cpp@{interfejs.cpp}}
+\doxysubsubsection{\texorpdfstring{intro()}{intro()}}
+{\footnotesize\ttfamily void intro (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Intro. 
+
+Deklaracja funkcji intro.
+
+Funkcja, która wita użytkownika w Kalkulatorze ONP. \mbox{\Hypertarget{interfejs_8cpp_ae1d0d8a9b2b6810d9e2a55d49a83f1af}\label{interfejs_8cpp_ae1d0d8a9b2b6810d9e2a55d49a83f1af}} 
+\index{interfejs.cpp@{interfejs.cpp}!wrocDoMenu@{wrocDoMenu}}
+\index{wrocDoMenu@{wrocDoMenu}!interfejs.cpp@{interfejs.cpp}}
+\doxysubsubsection{\texorpdfstring{wrocDoMenu()}{wrocDoMenu()}}
+{\footnotesize\ttfamily void wroc\+Do\+Menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Powrót do Menu. 
+
+Deklaracja funkcji, która wraca do menu głównego.
+
+Funkcja, która cofa użytkownika do menu głównego. \mbox{\Hypertarget{interfejs_8cpp_ab062c055c3d45894ec66c4d911789fcb}\label{interfejs_8cpp_ab062c055c3d45894ec66c4d911789fcb}} 
+\index{interfejs.cpp@{interfejs.cpp}!wrocDoModyfikacji@{wrocDoModyfikacji}}
+\index{wrocDoModyfikacji@{wrocDoModyfikacji}!interfejs.cpp@{interfejs.cpp}}
+\doxysubsubsection{\texorpdfstring{wrocDoModyfikacji()}{wrocDoModyfikacji()}}
+{\footnotesize\ttfamily void wroc\+Do\+Modyfikacji (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Powrót do wyboru opcji modyfikacji zmiennych. 
+
+Deklaracja funkcji, która wraca do wyboru opcji modyfikowania zmiennych.
+
+Funkcja, która cofa użytkownika do menu, które przedstawia opcje modyfikowania zmiennych. Funkcja realizuje się poprzez wyczyszczenie ekranu wiersza poleceń oraz wywołanie funkcji {\bfseries{\mbox{\hyperlink{funkcje_8cpp_aa44dca3a047db3c6375e73df02cfe76f}{modyfikuj\+Zmienne()}}}}. Czyszczenie ekranu.
+
+Wywołaniewywołanie funkcji {\bfseries{\mbox{\hyperlink{funkcje_8cpp_aa44dca3a047db3c6375e73df02cfe76f}{modyfikuj\+Zmienne()}}}}.

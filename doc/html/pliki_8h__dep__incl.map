@@ -1,0 +1,11 @@
+<map id="pliki.h" name="pliki.h">
+<area shape="rect" id="node1" title="Plik nagłówkowy modułu Pliki." alt="" coords="337,5,393,32"/>
+<area shape="rect" id="node2" href="$funkcje_8h.html" title="Plik nagłówkowy modułu Funkcje." alt="" coords="280,80,355,107"/>
+<area shape="rect" id="node9" href="$pliki_8cpp.html" title="Plik implementacji modułu Pliki." alt="" coords="379,80,450,107"/>
+<area shape="rect" id="node3" href="$funkcje_8cpp.html" title="Plik implementacji modułu Funkcje." alt="" coords="5,155,93,181"/>
+<area shape="rect" id="node4" href="$interfejs_8cpp.html" title="Plik implementacji modułu Interfejs." alt="" coords="118,155,210,181"/>
+<area shape="rect" id="node5" href="$lista_8cpp.html" title="Plik implementacji modułu Lista." alt="" coords="234,155,305,181"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title="Główny plik źródłowy." alt="" coords="329,155,404,181"/>
+<area shape="rect" id="node7" href="$menu_8h.html" title="Plik nagłówkowy modułu menu." alt="" coords="429,155,494,181"/>
+<area shape="rect" id="node8" href="$menu_8cpp.html" title="Plik impementacji modułu Menu." alt="" coords="422,229,501,256"/>
+</map>

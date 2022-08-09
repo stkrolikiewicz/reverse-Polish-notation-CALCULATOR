@@ -1,0 +1,605 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalkulator wyrażeń zapisanych w ONP: Dokumentacja pliku funkcje.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kalkulator wyrażeń zapisanych w ONP
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku funkcje.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plik nagłówkowy modułu Funkcje.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="pliki_8h_source.html">pliki.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="interfejs_8h_source.html">interfejs.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="lista_8h_source.html">lista.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;iomanip&gt;</code><br />
+<code>#include &quot;<a class="el" href="menu_8h_source.html">menu.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla funkcje.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="funkcje_8h__incl.png" border="0" usemap="#afunkcje_8h" alt=""/></div>
+<map name="afunkcje_8h" id="afunkcje_8h">
+<area shape="rect" title="Plik nagłówkowy modułu Funkcje." alt="" coords="311,5,386,32"/>
+<area shape="rect" href="pliki_8h.html" title="Plik nagłówkowy modułu Pliki." alt="" coords="86,80,142,107"/>
+<area shape="rect" title=" " alt="" coords="5,155,60,181"/>
+<area shape="rect" title=" " alt="" coords="258,155,330,181"/>
+<area shape="rect" href="interfejs_8h.html" title="Plik nagłówkowy modułu Interfejs." alt="" coords="217,80,296,107"/>
+<area shape="rect" href="lista_8h.html" title="Plik nagłówkowy modułu Lista." alt="" coords="320,80,377,107"/>
+<area shape="rect" title=" " alt="" coords="402,80,461,107"/>
+<area shape="rect" title=" " alt="" coords="485,80,551,107"/>
+<area shape="rect" href="menu_8h.html" title="Plik nagłówkowy modułu menu." alt="" coords="576,80,641,107"/>
+<area shape="rect" title=" " alt="" coords="84,155,144,181"/>
+<area shape="rect" title=" " alt="" coords="168,155,233,181"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="funkcje_8h__dep__incl.png" border="0" usemap="#afunkcje_8hdep" alt=""/></div>
+<map name="afunkcje_8hdep" id="afunkcje_8hdep">
+<area shape="rect" title="Plik nagłówkowy modułu Funkcje." alt="" coords="280,5,355,32"/>
+<area shape="rect" href="funkcje_8cpp.html" title="Plik implementacji modułu Funkcje." alt="" coords="5,80,93,107"/>
+<area shape="rect" href="interfejs_8cpp.html" title="Plik implementacji modułu Interfejs." alt="" coords="118,80,210,107"/>
+<area shape="rect" href="lista_8cpp.html" title="Plik implementacji modułu Lista." alt="" coords="234,80,305,107"/>
+<area shape="rect" href="main_8cpp.html" title="Główny plik źródłowy." alt="" coords="329,80,404,107"/>
+<area shape="rect" href="menu_8h.html" title="Plik nagłówkowy modułu menu." alt="" coords="429,80,494,107"/>
+<area shape="rect" href="menu_8cpp.html" title="Plik impementacji modułu Menu." alt="" coords="422,155,501,181"/>
+</map>
+</div>
+</div>
+<p><a href="funkcje_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:ab28347e597836017600e46d0e744c901"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ab28347e597836017600e46d0e744c901">modyfikujWyrazenie</a> ()</td></tr>
+<tr class="memdesc:ab28347e597836017600e46d0e744c901"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja modyfikująca wyrazenie.  <a href="funkcje_8h.html#ab28347e597836017600e46d0e744c901">Więcej...</a><br /></td></tr>
+<tr class="separator:ab28347e597836017600e46d0e744c901"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb6dff831c82de66b589000673f71044"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#afb6dff831c82de66b589000673f71044">obliczWyrazenie</a> ()</td></tr>
+<tr class="memdesc:afb6dff831c82de66b589000673f71044"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obliczająca wyrazenie.  <a href="funkcje_8h.html#afb6dff831c82de66b589000673f71044">Więcej...</a><br /></td></tr>
+<tr class="separator:afb6dff831c82de66b589000673f71044"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa44dca3a047db3c6375e73df02cfe76f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#aa44dca3a047db3c6375e73df02cfe76f">modyfikujZmienne</a> ()</td></tr>
+<tr class="memdesc:aa44dca3a047db3c6375e73df02cfe76f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja modyfikująca zmienne.  <a href="funkcje_8h.html#aa44dca3a047db3c6375e73df02cfe76f">Więcej...</a><br /></td></tr>
+<tr class="separator:aa44dca3a047db3c6375e73df02cfe76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92de69e02f915491760707726845d5a6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a92de69e02f915491760707726845d5a6">zamienStringNaDouble</a> (string napis)</td></tr>
+<tr class="memdesc:a92de69e02f915491760707726845d5a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Zamień napis na liczbę  <a href="funkcje_8h.html#a92de69e02f915491760707726845d5a6">Więcej...</a><br /></td></tr>
+<tr class="separator:a92de69e02f915491760707726845d5a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae62a54c8fb04a027c78edc4776d147b8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ae62a54c8fb04a027c78edc4776d147b8">odlozNaStos</a> (double x)</td></tr>
+<tr class="memdesc:ae62a54c8fb04a027c78edc4776d147b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja odkłada liczbę na stos.  <a href="funkcje_8h.html#ae62a54c8fb04a027c78edc4776d147b8">Więcej...</a><br /></td></tr>
+<tr class="separator:ae62a54c8fb04a027c78edc4776d147b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0170a5d85f69aedf46f6c3994845f697"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a0170a5d85f69aedf46f6c3994845f697">jakiOperator</a> (char a, bool &amp;zero)</td></tr>
+<tr class="memdesc:a0170a5d85f69aedf46f6c3994845f697"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, która interpetuje operator.  <a href="funkcje_8h.html#a0170a5d85f69aedf46f6c3994845f697">Więcej...</a><br /></td></tr>
+<tr class="separator:a0170a5d85f69aedf46f6c3994845f697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09839fecc501772fdcd50e378105a5c3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a09839fecc501772fdcd50e378105a5c3">czyToZmienna</a> (bool &amp;f, bool &amp;t, double &amp;val, char T[], int n, int &amp;i, double &amp;wynik)</td></tr>
+<tr class="memdesc:a09839fecc501772fdcd50e378105a5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdza, czy zawarty w wyrażeniu ciąg znaków jest zmienną  <a href="funkcje_8h.html#a09839fecc501772fdcd50e378105a5c3">Więcej...</a><br /></td></tr>
+<tr class="separator:a09839fecc501772fdcd50e378105a5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8886dea5d9a7e11f3c0cfa36f44581af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#a8886dea5d9a7e11f3c0cfa36f44581af">czySinCos</a> (bool &amp;f, string &amp;name, char T[], int n, int i)</td></tr>
+<tr class="memdesc:a8886dea5d9a7e11f3c0cfa36f44581af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja sprawdza, czy zawarty w wyrazeniu ciąg znaków jest operatorem sinus lub cosinus.  <a href="funkcje_8h.html#a8886dea5d9a7e11f3c0cfa36f44581af">Więcej...</a><br /></td></tr>
+<tr class="separator:a8886dea5d9a7e11f3c0cfa36f44581af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc093d5e8f58a67e2947091bedade8d8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#afc093d5e8f58a67e2947091bedade8d8">obliczSinCos</a> (string name)</td></tr>
+<tr class="memdesc:afc093d5e8f58a67e2947091bedade8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obliczająca funkcje trygonometryczną  <a href="funkcje_8h.html#afc093d5e8f58a67e2947091bedade8d8">Więcej...</a><br /></td></tr>
+<tr class="separator:afc093d5e8f58a67e2947091bedade8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad209b9e5b00b19ac864b3c25674ef5d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ad209b9e5b00b19ac864b3c25674ef5d0">dodajZmienna</a> (string name, double value, bool &amp;c)</td></tr>
+<tr class="memdesc:ad209b9e5b00b19ac864b3c25674ef5d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja dodająca zmienne.  <a href="funkcje_8h.html#ad209b9e5b00b19ac864b3c25674ef5d0">Więcej...</a><br /></td></tr>
+<tr class="separator:ad209b9e5b00b19ac864b3c25674ef5d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac760585c1290519fda8da5bc05661559"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="funkcje_8h.html#ac760585c1290519fda8da5bc05661559">edytujZmienna</a> (int i)</td></tr>
+<tr class="memdesc:ac760585c1290519fda8da5bc05661559"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja edytująca zmienne.  <a href="funkcje_8h.html#ac760585c1290519fda8da5bc05661559">Więcej...</a><br /></td></tr>
+<tr class="separator:ac760585c1290519fda8da5bc05661559"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Plik nagłówkowy modułu Funkcje. </p>
+<p>Zawiera on deklaracje najbardziej istotnych funkcji programu, służących do obliczania i edytowania wyrażenia oraz tworzenia i modyfikacji zmiennych. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a8886dea5d9a7e11f3c0cfa36f44581af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8886dea5d9a7e11f3c0cfa36f44581af">&#9670;&nbsp;</a></span>czySinCos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void czySinCos </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>T</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdza, czy zawarty w wyrazeniu ciąg znaków jest operatorem sinus lub cosinus. </p>
+<p>Deklaracja funkcji, która ma na celu określenie, czy dany ciąg znaków jest operatorem sinus lub cosinus. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&amp;f</td><td>flaga, która informuje, czy badany ciąg znaków w wyrażeniu jest sinusem lub cosinusem </td></tr>
+    <tr><td class="paramname">&amp;name</td><td>zmienna, która przechowuje wartość znalezionego operatora (sin lub cos) </td></tr>
+    <tr><td class="paramname">T[]</td><td>talica, która przechowuje kolejne znaki wyrazenia </td></tr>
+    <tr><td class="paramname">n</td><td>rozmiar tablicy </td></tr>
+    <tr><td class="paramname">i</td><td>nr pierwszego wyrazu ciagu</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która określa, czy dany ciąg znaków jest operatorem sinus lub cosinus. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&amp;f</td><td>flaga, która informuje, czy badany ciąg znaków w wyrażeniu jest sinusem lub cosinusem </td></tr>
+    <tr><td class="paramname">&amp;name</td><td>zmienna, która przechowuje wartość znalezionego operatora (sin lub cos) </td></tr>
+    <tr><td class="paramname">T[]</td><td>talica, która przechowuje kolejne znaki wyrazenia </td></tr>
+    <tr><td class="paramname">n</td><td>rozmiar tablicy </td></tr>
+    <tr><td class="paramname">i</td><td>nr pierwszego wyrazu ciagu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a09839fecc501772fdcd50e378105a5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a09839fecc501772fdcd50e378105a5c3">&#9670;&nbsp;</a></span>czyToZmienna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void czyToZmienna </td>
+          <td>(</td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>f</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>t</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>val</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>T</em>[], </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>i</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>wynik</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja sprawdza, czy zawarty w wyrażeniu ciąg znaków jest zmienną </p>
+<p>Deklaracja funkcji, która ma na celu, sprawdzić, czy zawarte w wyrażeniu ciągi wyrazów są zmiennymi wprowadzonymi wcześniej przez użytkownika. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&amp;f</td><td>flaga, która daje informacje, czy istnieje zmienna o podanej nazwie </td></tr>
+    <tr><td class="paramname">&amp;t</td><td></td></tr>
+    <tr><td class="paramname">&amp;val</td><td></td></tr>
+    <tr><td class="paramname">T[]</td><td>tablica znakow, które połączeniu tworzą szukaną nazwę </td></tr>
+    <tr><td class="paramname">n</td><td>rozmiar tablicy </td></tr>
+    <tr><td class="paramname">&amp;i</td><td>nr pierwszego znaku ciągu wyrazów w tablicy </td></tr>
+    <tr><td class="paramname">&amp;wynik</td><td>zapisuje wynik, w przypadku, gdy ciąg jest sinusem lub cosinusem</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która sprawdzaa czy zawarte w wyrażeniu ciągi wyrazów są zmiennymi wprowadzonymi wcześniej przez użytkownika. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">&amp;f</td><td>flaga, która daje informacje, czy istnieje zmienna o podanej nazwie </td></tr>
+    <tr><td class="paramname">&amp;t</td><td></td></tr>
+    <tr><td class="paramname">&amp;val</td><td></td></tr>
+    <tr><td class="paramname">T[]</td><td>tablica znakow, które połączeniu tworzą szukaną nazwę </td></tr>
+    <tr><td class="paramname">n</td><td>rozmiar tablicy </td></tr>
+    <tr><td class="paramname">&amp;i</td><td>nr pierwszego znaku ciągu wyrazów w tablicy </td></tr>
+    <tr><td class="paramname">&amp;wynik</td><td>zapisuje wynik, w przypadku, gdy ciąg jest sinusem lub cosinusem </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ad209b9e5b00b19ac864b3c25674ef5d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad209b9e5b00b19ac864b3c25674ef5d0">&#9670;&nbsp;</a></span>dodajZmienna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dodajZmienna </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja dodająca zmienne. </p>
+<p>Deklaracja funkcji, która ma umożliwiać dodawanie nowych zmiennych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>nazwa nowej zmienej </td></tr>
+    <tr><td class="paramname">value</td><td>wartosc liczbowa nowej zmiennej </td></tr>
+    <tr><td class="paramname">&amp;c</td><td>flaga, która informuje, czy zmienna o podanej nazwie już istnieje</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która umożliwia dodawanie nowych zmiennych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>nazwa nowej zmienej </td></tr>
+    <tr><td class="paramname">value</td><td>wartosc liczbowa nowej zmiennej </td></tr>
+    <tr><td class="paramname">&amp;c</td><td>flaga, która informuje, czy zmienna o podanej nazwie już istnieje </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ac760585c1290519fda8da5bc05661559"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac760585c1290519fda8da5bc05661559">&#9670;&nbsp;</a></span>edytujZmienna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void edytujZmienna </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>j</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja edytująca zmienne. </p>
+<p>Deklaracja funkcji, która edytuje wybraną zmienną. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>nr zmiennej</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która edytuje wybraną zmienną. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">i</td><td>nr zmiennej </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a0170a5d85f69aedf46f6c3994845f697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0170a5d85f69aedf46f6c3994845f697">&#9670;&nbsp;</a></span>jakiOperator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double jakiOperator </td>
+          <td>(</td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>zero</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja, która interpetuje operator. </p>
+<p>Deklaracja funkcji, która ma interpretować jaki operator matematyczny spośród '+', '-', '/', '*' lub '^' ma być użyty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>znak, który ma zostać zinterpretowany </td></tr>
+    <tr><td class="paramname">&amp;zero</td><td>flaga, która ma wskazywać, czy operator dzielenie ma dzielić przez zero </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>liczba zwracana jako wartosc wyniku dzialania z uzyciem operatora</dd></dl>
+<p>Definicja funkcji, która interpretuje jaki opersator matematyczny spośród '+', '-', '/', '*' lub '^' ma być użyty. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">a</td><td>znak, który ma zostać zinterpretowany </td></tr>
+    <tr><td class="paramname">&amp;zero</td><td>flaga, która ma wskazywać, czy operator dzielenie ma dzielić przez zero </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>liczba zwracana jako wartosc wyniku dzialania z uzyciem operatora </dd></dl>
+
+</div>
+</div>
+<a id="ab28347e597836017600e46d0e744c901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28347e597836017600e46d0e744c901">&#9670;&nbsp;</a></span>modyfikujWyrazenie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modyfikujWyrazenie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja modyfikująca wyrazenie. </p>
+<p>Deklaracja funkcji, która daje możliwość modyfikacji wyrazenia zapisanego w pliku tekstowym, które następnie jest obliczane.</p>
+<p>Definicja funkcji, która daje możliwość modyfikacji wyrazenia zapisanego w pliku tekstowym, które następnie jest obliczane. </p>
+
+</div>
+</div>
+<a id="aa44dca3a047db3c6375e73df02cfe76f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa44dca3a047db3c6375e73df02cfe76f">&#9670;&nbsp;</a></span>modyfikujZmienne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void modyfikujZmienne </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja modyfikująca zmienne. </p>
+<p>Deklaracja funkcji, która ma dawać możliwość modyfikacji lub/i dodawania zmienncyh przez użytkownika.</p>
+<p>Definicja funkcji, daje możliwość modyfikacji lub/i dodawania zmienncyh przez użytkownika. </p>
+
+</div>
+</div>
+<a id="afc093d5e8f58a67e2947091bedade8d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc093d5e8f58a67e2947091bedade8d8">&#9670;&nbsp;</a></span>obliczSinCos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double obliczSinCos </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>name</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja obliczająca funkcje trygonometryczną </p>
+<p>Deklaracja funkcji, która oblicza sinus lub cosinus wartości. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>nazwa funkcji trygonometrycznej</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która oblicza sinus lub cosinus wartości. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name</td><td>nazwa funkcji trygonometrycznej </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="afb6dff831c82de66b589000673f71044"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb6dff831c82de66b589000673f71044">&#9670;&nbsp;</a></span>obliczWyrazenie()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void obliczWyrazenie </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja obliczająca wyrazenie. </p>
+<p>Deklaracja funkcji, która ma obliczać wyrażenie zapisane w pliku tekstowym.</p>
+<p>Definicja funkcji, która oblicza wyrażenie zapisane w pliku tekstowym. </p>
+
+</div>
+</div>
+<a id="ae62a54c8fb04a027c78edc4776d147b8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae62a54c8fb04a027c78edc4776d147b8">&#9670;&nbsp;</a></span>odlozNaStos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void odlozNaStos </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>x</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja odkłada liczbę na stos. </p>
+<p>Deklaracja funkcji, która ma odkładać podaną wartość (double) na stos, tak aby w późniejszym etapie wartość została pobrana zmanipulowana przed następujący po niej operator. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>liczba odkladana na stos jako wartos nowego elementu listy argumentów</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która odkłada podaną wartość (double) na stos, tak aby w późniejszym etapie wartość została pobrana zmanipulowana przed następujący po niej operator. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">x</td><td>liczba odkladana na stos jako wartos nowego elementu listy argumentów </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a92de69e02f915491760707726845d5a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a92de69e02f915491760707726845d5a6">&#9670;&nbsp;</a></span>zamienStringNaDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double zamienStringNaDouble </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>napis</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Zamień napis na liczbę </p>
+<p>Deklaracja funkcji, która ma zmieniać napis przedstawiający jakąś liczbę na zmienną typu double. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">napis</td><td>reprezentuje ciąg cyfr, ale jeszcze nie jest liczbą </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>x liczba, która jest już typu double</dd></dl>
+<p>Definicja funkcji, która zamienia napis przedstawiający jakąś liczbę na zmienną typu double. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">napis</td><td>reprezentuje ciąg cyfr, ale jeszcze nie jest liczbą </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Zwraca</dt><dd>x liczba, która jest już typu double </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

@@ -1,0 +1,188 @@
+\hypertarget{lista_8cpp}{}\doxysection{Dokumentacja pliku lista.\+cpp}
+\label{lista_8cpp}\index{lista.cpp@{lista.cpp}}
+
+
+Plik implementacji modułu Lista.  
+
+
+{\ttfamily \#include \char`\"{}lista.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}funkcje.\+h\char`\"{}}\newline
+Wykres zależności załączania dla lista.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_argument}{Argument}} $\ast$ \mbox{\hyperlink{lista_8cpp_ac7e839cc3d11b81d4042dc693723d3f5}{stworz\+Stos}} (double x)
+\begin{DoxyCompactList}\small\item\em Funkcja, która tworzy stos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_a38f465924dd6bc7e811e640c07e5f3af}{dodaj\+Element}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&glowa, double liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja, dodaje element do stosu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_a096a261aeb8900a7002abbbd93fed0bd}{usun\+Element\+Ze\+Stosu}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&glowa)
+\begin{DoxyCompactList}\small\item\em Funkcja, która usuwa pierwszy element ze stosu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_a75aee9ee6241c29f74b48c089075604d}{wyczysc\+Stos}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&glowa)
+\begin{DoxyCompactList}\small\item\em Funkcja, która czyści stos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_a2126f409224c931f76acc93e67d36254}{wypisz\+Stos}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$glowa)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca stos. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$ \mbox{\hyperlink{lista_8cpp_aaa4e745203e0b346cf700adc156ef9a8}{lista\+Zmiennych}} (double x)
+\begin{DoxyCompactList}\small\item\em Funkcja, która tworzy głowę listy zmiennych. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_ad845aa897144991fbac3cc70b095b89d}{usun\+Zmienna}} (\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&glowa, int i)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwająca zmienną \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_a6c27b0720bd3a9812dca8ad12c235541}{usun\+Wszystkie\+Zmienne}} (\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&w)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwająca wszystkie zmienne. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8cpp_a335e04d3e32b998148bfc5f0298e5ada}{wypisz\+Liste\+Zmiennych}} (\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$w, int i)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca listę zmiennych. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik implementacji modułu Lista. 
+
+Zawiera on definicje funkcji potrzebnych do działania na listach. 
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{lista_8cpp_a38f465924dd6bc7e811e640c07e5f3af}\label{lista_8cpp_a38f465924dd6bc7e811e640c07e5f3af}} 
+\index{lista.cpp@{lista.cpp}!dodajElement@{dodajElement}}
+\index{dodajElement@{dodajElement}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{dodajElement()}{dodajElement()}}
+{\footnotesize\ttfamily void dodaj\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&}]{glowa,  }\item[{double}]{liczba }\end{DoxyParamCaption})}
+
+
+
+Funkcja, dodaje element do stosu. 
+
+Definicja funkcji, która dodaje nowy element do stosu 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+{\em liczba} & wartość liczbowa nowego elementu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8cpp_aaa4e745203e0b346cf700adc156ef9a8}\label{lista_8cpp_aaa4e745203e0b346cf700adc156ef9a8}} 
+\index{lista.cpp@{lista.cpp}!listaZmiennych@{listaZmiennych}}
+\index{listaZmiennych@{listaZmiennych}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{listaZmiennych()}{listaZmiennych()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_zmienna}{Zmienna}}$\ast$ lista\+Zmiennych (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która tworzy głowę listy zmiennych. 
+
+Definicja funkcji, która alokuje pamięć na pierwszą zmienną. 
+\begin{DoxyParams}{Parametry}
+{\em x} & wartość liczbowa pierwszej zmiennej \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+glowa wskaźnik do pierwszego elementu listy 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lista_8cpp_ac7e839cc3d11b81d4042dc693723d3f5}\label{lista_8cpp_ac7e839cc3d11b81d4042dc693723d3f5}} 
+\index{lista.cpp@{lista.cpp}!stworzStos@{stworzStos}}
+\index{stworzStos@{stworzStos}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{stworzStos()}{stworzStos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_argument}{Argument}}$\ast$ stworz\+Stos (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która tworzy stos. 
+
+Definicja funkcji, która alokuje pamięć na głowę stosu. \begin{DoxyReturn}{Zwraca}
+stos wskaźnik do pierwszego elementu stosu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lista_8cpp_a096a261aeb8900a7002abbbd93fed0bd}\label{lista_8cpp_a096a261aeb8900a7002abbbd93fed0bd}} 
+\index{lista.cpp@{lista.cpp}!usunElementZeStosu@{usunElementZeStosu}}
+\index{usunElementZeStosu@{usunElementZeStosu}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{usunElementZeStosu()}{usunElementZeStosu()}}
+{\footnotesize\ttfamily void usun\+Element\+Ze\+Stosu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&}]{glowa }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która usuwa pierwszy element ze stosu. 
+
+Definicja funkcji, która usuwa pierwszy argument ze stosu, czyli głowę listy dynamicznej. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8cpp_a6c27b0720bd3a9812dca8ad12c235541}\label{lista_8cpp_a6c27b0720bd3a9812dca8ad12c235541}} 
+\index{lista.cpp@{lista.cpp}!usunWszystkieZmienne@{usunWszystkieZmienne}}
+\index{usunWszystkieZmienne@{usunWszystkieZmienne}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{usunWszystkieZmienne()}{usunWszystkieZmienne()}}
+{\footnotesize\ttfamily void usun\+Wszystkie\+Zmienne (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&}]{w }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwająca wszystkie zmienne. 
+
+Definicja funkcji, która usuwa wszystkie elementy listy zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8cpp_ad845aa897144991fbac3cc70b095b89d}\label{lista_8cpp_ad845aa897144991fbac3cc70b095b89d}} 
+\index{lista.cpp@{lista.cpp}!usunZmienna@{usunZmienna}}
+\index{usunZmienna@{usunZmienna}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{usunZmienna()}{usunZmienna()}}
+{\footnotesize\ttfamily void usun\+Zmienna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&}]{glowa,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwająca zmienną 
+
+Definicja funkcji, która usuwa wybraną zmienna. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+{\em i} & nr zmiennej \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8cpp_a75aee9ee6241c29f74b48c089075604d}\label{lista_8cpp_a75aee9ee6241c29f74b48c089075604d}} 
+\index{lista.cpp@{lista.cpp}!wyczyscStos@{wyczyscStos}}
+\index{wyczyscStos@{wyczyscStos}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{wyczyscStos()}{wyczyscStos()}}
+{\footnotesize\ttfamily void wyczysc\+Stos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&}]{glowa }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która czyści stos. 
+
+Definicja funkcji, która usuwa wszystkie elementy ze stosu, czyli listy dynamicznej jednokierunowej argumentów 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8cpp_a335e04d3e32b998148bfc5f0298e5ada}\label{lista_8cpp_a335e04d3e32b998148bfc5f0298e5ada}} 
+\index{lista.cpp@{lista.cpp}!wypiszListeZmiennych@{wypiszListeZmiennych}}
+\index{wypiszListeZmiennych@{wypiszListeZmiennych}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{wypiszListeZmiennych()}{wypiszListeZmiennych()}}
+{\footnotesize\ttfamily void wypisz\+Liste\+Zmiennych (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$}]{w,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca listę zmiennych. 
+
+Definicja funkcji, która wypisuje wszystkie elementy listy zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+{\em i} & liczba do numeracji kolejnych elementów listy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8cpp_a2126f409224c931f76acc93e67d36254}\label{lista_8cpp_a2126f409224c931f76acc93e67d36254}} 
+\index{lista.cpp@{lista.cpp}!wypiszStos@{wypiszStos}}
+\index{wypiszStos@{wypiszStos}!lista.cpp@{lista.cpp}}
+\doxysubsubsection{\texorpdfstring{wypiszStos()}{wypiszStos()}}
+{\footnotesize\ttfamily void wypisz\+Stos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$}]{glowa }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca stos. 
+
+Definicja funkcji, która wypisuje listę dynamiczną jednokierunkową argumentów. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+\end{DoxyParams}

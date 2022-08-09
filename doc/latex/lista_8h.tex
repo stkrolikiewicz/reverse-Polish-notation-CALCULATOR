@@ -1,0 +1,223 @@
+\hypertarget{lista_8h}{}\doxysection{Dokumentacja pliku lista.\+h}
+\label{lista_8h}\index{lista.h@{lista.h}}
+
+
+Plik nagłówkowy modułu Lista.  
+
+
+{\ttfamily \#include $<$iostream$>$}\newline
+Wykres zależności załączania dla lista.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=134pt]{lista_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{lista_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Komponenty}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_argument}{Argument}}
+\begin{DoxyCompactList}\small\item\em Element listy dynamicznej. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_zmienna}{Zmienna}}
+\begin{DoxyCompactList}\small\item\em Element listy dynamicznej. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{lista_8h_a2a3468ba94e2a583940d5bb01d2c6438}{usun\+Zmienna}} (\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&w, int i)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwająca zmienną \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8h_a6c27b0720bd3a9812dca8ad12c235541}{usun\+Wszystkie\+Zmienne}} (\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&w)
+\begin{DoxyCompactList}\small\item\em Funkcja usuwająca wszystkie zmienne. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8h_a335e04d3e32b998148bfc5f0298e5ada}{wypisz\+Liste\+Zmiennych}} (\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$w, int i)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca listę zmiennych. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_argument}{Argument}} $\ast$ \mbox{\hyperlink{lista_8h_a2c26d80a5bfa2e65280d9194e944a2c7}{stworz\+Stos}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja, która tworzy stos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8h_a38f465924dd6bc7e811e640c07e5f3af}{dodaj\+Element}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&glowa, double liczba)
+\begin{DoxyCompactList}\small\item\em Funkcja, dodaje element do stosu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8h_a75aee9ee6241c29f74b48c089075604d}{wyczysc\+Stos}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&glowa)
+\begin{DoxyCompactList}\small\item\em Funkcja, która czyści stos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8h_a096a261aeb8900a7002abbbd93fed0bd}{usun\+Element\+Ze\+Stosu}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&glowa)
+\begin{DoxyCompactList}\small\item\em Funkcja, która usuwa pierwszy element ze stosu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{lista_8h_a2126f409224c931f76acc93e67d36254}{wypisz\+Stos}} (\mbox{\hyperlink{struct_argument}{Argument}} $\ast$glowa)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisująca stos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik nagłówkowy modułu Lista. 
+
+Zawiera on deklaracje funkcji potrzebnych do działania na listach. 
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{lista_8h_a38f465924dd6bc7e811e640c07e5f3af}\label{lista_8h_a38f465924dd6bc7e811e640c07e5f3af}} 
+\index{lista.h@{lista.h}!dodajElement@{dodajElement}}
+\index{dodajElement@{dodajElement}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{dodajElement()}{dodajElement()}}
+{\footnotesize\ttfamily void dodaj\+Element (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&}]{glowa,  }\item[{double}]{liczba }\end{DoxyParamCaption})}
+
+
+
+Funkcja, dodaje element do stosu. 
+
+Deklaracja funkcji, która ma dodać nowy element do stosu 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+{\em liczba} & wartość liczbowa nowego elementu\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która dodaje nowy element do stosu 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+{\em liczba} & wartość liczbowa nowego elementu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8h_a2c26d80a5bfa2e65280d9194e944a2c7}\label{lista_8h_a2c26d80a5bfa2e65280d9194e944a2c7}} 
+\index{lista.h@{lista.h}!stworzStos@{stworzStos}}
+\index{stworzStos@{stworzStos}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{stworzStos()}{stworzStos()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_argument}{Argument}}$\ast$ stworz\+Stos (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która tworzy stos. 
+
+Deklaracja funkcji, która ma zaalokować pamięć na głowę stosu. \begin{DoxyReturn}{Zwraca}
+stos wskaźnik do pierwszego elementu stosu 
+\end{DoxyReturn}
+\mbox{\Hypertarget{lista_8h_a096a261aeb8900a7002abbbd93fed0bd}\label{lista_8h_a096a261aeb8900a7002abbbd93fed0bd}} 
+\index{lista.h@{lista.h}!usunElementZeStosu@{usunElementZeStosu}}
+\index{usunElementZeStosu@{usunElementZeStosu}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{usunElementZeStosu()}{usunElementZeStosu()}}
+{\footnotesize\ttfamily void usun\+Element\+Ze\+Stosu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&}]{glowa }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która usuwa pierwszy element ze stosu. 
+
+Deklaracja funkcji, która ma usunąć pierwszy argument ze stosu, czyli głowę listy dynamicznej. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która usuwa pierwszy argument ze stosu, czyli głowę listy dynamicznej. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8h_a6c27b0720bd3a9812dca8ad12c235541}\label{lista_8h_a6c27b0720bd3a9812dca8ad12c235541}} 
+\index{lista.h@{lista.h}!usunWszystkieZmienne@{usunWszystkieZmienne}}
+\index{usunWszystkieZmienne@{usunWszystkieZmienne}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{usunWszystkieZmienne()}{usunWszystkieZmienne()}}
+{\footnotesize\ttfamily void usun\+Wszystkie\+Zmienne (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&}]{w }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwająca wszystkie zmienne. 
+
+Deklaracja funkcji, która usuwa wszystkie elementy listy zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}}\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która usuwa wszystkie elementy listy zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8h_a2a3468ba94e2a583940d5bb01d2c6438}\label{lista_8h_a2a3468ba94e2a583940d5bb01d2c6438}} 
+\index{lista.h@{lista.h}!usunZmienna@{usunZmienna}}
+\index{usunZmienna@{usunZmienna}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{usunZmienna()}{usunZmienna()}}
+{\footnotesize\ttfamily void usun\+Zmienna (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$\&}]{glowa,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Funkcja usuwająca zmienną 
+
+Deklaracja funkcji, która ma ma usuwać wybraną zmienna. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+{\em i} & nr zmiennej\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która usuwa wybraną zmienna. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+{\em i} & nr zmiennej \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8h_a75aee9ee6241c29f74b48c089075604d}\label{lista_8h_a75aee9ee6241c29f74b48c089075604d}} 
+\index{lista.h@{lista.h}!wyczyscStos@{wyczyscStos}}
+\index{wyczyscStos@{wyczyscStos}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{wyczyscStos()}{wyczyscStos()}}
+{\footnotesize\ttfamily void wyczysc\+Stos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$\&}]{glowa }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która czyści stos. 
+
+Deklaracja funkcji, która ma usunąć wszystkie elementy ze stosu, czyli listy dynamicznej jednokierunowej argumentów 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która usuwa wszystkie elementy ze stosu, czyli listy dynamicznej jednokierunowej argumentów 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8h_a335e04d3e32b998148bfc5f0298e5ada}\label{lista_8h_a335e04d3e32b998148bfc5f0298e5ada}} 
+\index{lista.h@{lista.h}!wypiszListeZmiennych@{wypiszListeZmiennych}}
+\index{wypiszListeZmiennych@{wypiszListeZmiennych}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{wypiszListeZmiennych()}{wypiszListeZmiennych()}}
+{\footnotesize\ttfamily void wypisz\+Liste\+Zmiennych (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$}]{w,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca listę zmiennych. 
+
+Deklaracja funkcji, która wypisuje wszystkie elementy listy zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+{\em i} & liczba do numeracji kolejnych elementów listy\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która wypisuje wszystkie elementy listy zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$w} & wskaźnik typu \mbox{\hyperlink{struct_zmienna}{Zmienna}} \\
+\hline
+{\em i} & liczba do numeracji kolejnych elementów listy \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{lista_8h_a2126f409224c931f76acc93e67d36254}\label{lista_8h_a2126f409224c931f76acc93e67d36254}} 
+\index{lista.h@{lista.h}!wypiszStos@{wypiszStos}}
+\index{wypiszStos@{wypiszStos}!lista.h@{lista.h}}
+\doxysubsubsection{\texorpdfstring{wypiszStos()}{wypiszStos()}}
+{\footnotesize\ttfamily void wypisz\+Stos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_argument}{Argument}} $\ast$}]{glowa }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisująca stos. 
+
+Deklaracja funkcji, która ma wypisać listę dynamiczną jednokierunkową argumentów. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów\\
+\hline
+\end{DoxyParams}
+Definicja funkcji, która wypisuje listę dynamiczną jednokierunkową argumentów. 
+\begin{DoxyParams}{Parametry}
+{\em $\ast$\&glowa} & wskaźnik do głowy listy argumentów \\
+\hline
+\end{DoxyParams}

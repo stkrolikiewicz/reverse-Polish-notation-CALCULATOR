@@ -1,0 +1,428 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalkulator wyrażeń zapisanych w ONP: Dokumentacja pliku lista.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kalkulator wyrażeń zapisanych w ONP
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Komponenty</a> &#124;
+<a href="#func-members">Funkcje</a>  </div>
+  <div class="headertitle">
+<div class="title">Dokumentacja pliku lista.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p>Plik nagłówkowy modułu Lista.  
+<a href="#details">Więcej...</a></p>
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Wykres zależności załączania dla lista.h:</div>
+<div class="dyncontent">
+<div class="center"><img src="lista_8h__incl.png" border="0" usemap="#alista_8h" alt=""/></div>
+<map name="alista_8h" id="alista_8h">
+<area shape="rect" title="Plik nagłówkowy modułu Lista." alt="" coords="13,5,70,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,77,107"/>
+</map>
+</div>
+</div><div class="textblock"><div class="dynheader">
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik:</div>
+<div class="dyncontent">
+<div class="center"><img src="lista_8h__dep__incl.png" border="0" usemap="#alista_8hdep" alt=""/></div>
+<map name="alista_8hdep" id="alista_8hdep">
+<area shape="rect" title="Plik nagłówkowy modułu Lista." alt="" coords="128,5,185,32"/>
+<area shape="rect" href="funkcje_8h.html" title="Plik nagłówkowy modułu Funkcje." alt="" coords="223,80,298,107"/>
+<area shape="rect" href="interfejs_8cpp.html" title="Plik implementacji modułu Interfejs." alt="" coords="5,155,97,181"/>
+<area shape="rect" href="lista_8cpp.html" title="Plik implementacji modułu Lista." alt="" coords="121,155,192,181"/>
+<area shape="rect" href="funkcje_8cpp.html" title="Plik implementacji modułu Funkcje." alt="" coords="217,155,305,181"/>
+<area shape="rect" href="main_8cpp.html" title="Główny plik źródłowy." alt="" coords="329,155,403,181"/>
+<area shape="rect" href="menu_8h.html" title="Plik nagłówkowy modułu menu." alt="" coords="428,155,493,181"/>
+<area shape="rect" href="menu_8cpp.html" title="Plik impementacji modułu Menu." alt="" coords="421,229,500,256"/>
+</map>
+</div>
+</div>
+<p><a href="lista_8h_source.html">Idź do kodu źródłowego tego pliku.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Komponenty</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_argument.html">Argument</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element listy dynamicznej.  <a href="struct_argument.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_zmienna.html">Zmienna</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Element listy dynamicznej.  <a href="struct_zmienna.html#details">Więcej...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Funkcje</h2></td></tr>
+<tr class="memitem:a2a3468ba94e2a583940d5bb01d2c6438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a2a3468ba94e2a583940d5bb01d2c6438">usunZmienna</a> (<a class="el" href="struct_zmienna.html">Zmienna</a> *&amp;w, int i)</td></tr>
+<tr class="memdesc:a2a3468ba94e2a583940d5bb01d2c6438"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja usuwająca zmienną  <a href="lista_8h.html#a2a3468ba94e2a583940d5bb01d2c6438">Więcej...</a><br /></td></tr>
+<tr class="separator:a2a3468ba94e2a583940d5bb01d2c6438"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c27b0720bd3a9812dca8ad12c235541"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a6c27b0720bd3a9812dca8ad12c235541">usunWszystkieZmienne</a> (<a class="el" href="struct_zmienna.html">Zmienna</a> *&amp;w)</td></tr>
+<tr class="memdesc:a6c27b0720bd3a9812dca8ad12c235541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja usuwająca wszystkie zmienne.  <a href="lista_8h.html#a6c27b0720bd3a9812dca8ad12c235541">Więcej...</a><br /></td></tr>
+<tr class="separator:a6c27b0720bd3a9812dca8ad12c235541"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a335e04d3e32b998148bfc5f0298e5ada"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a335e04d3e32b998148bfc5f0298e5ada">wypiszListeZmiennych</a> (<a class="el" href="struct_zmienna.html">Zmienna</a> *w, int i)</td></tr>
+<tr class="memdesc:a335e04d3e32b998148bfc5f0298e5ada"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisująca listę zmiennych.  <a href="lista_8h.html#a335e04d3e32b998148bfc5f0298e5ada">Więcej...</a><br /></td></tr>
+<tr class="separator:a335e04d3e32b998148bfc5f0298e5ada"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c26d80a5bfa2e65280d9194e944a2c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_argument.html">Argument</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a2c26d80a5bfa2e65280d9194e944a2c7">stworzStos</a> ()</td></tr>
+<tr class="memdesc:a2c26d80a5bfa2e65280d9194e944a2c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, która tworzy stos.  <a href="lista_8h.html#a2c26d80a5bfa2e65280d9194e944a2c7">Więcej...</a><br /></td></tr>
+<tr class="separator:a2c26d80a5bfa2e65280d9194e944a2c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38f465924dd6bc7e811e640c07e5f3af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a38f465924dd6bc7e811e640c07e5f3af">dodajElement</a> (<a class="el" href="struct_argument.html">Argument</a> *&amp;glowa, double liczba)</td></tr>
+<tr class="memdesc:a38f465924dd6bc7e811e640c07e5f3af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, dodaje element do stosu.  <a href="lista_8h.html#a38f465924dd6bc7e811e640c07e5f3af">Więcej...</a><br /></td></tr>
+<tr class="separator:a38f465924dd6bc7e811e640c07e5f3af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a75aee9ee6241c29f74b48c089075604d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a75aee9ee6241c29f74b48c089075604d">wyczyscStos</a> (<a class="el" href="struct_argument.html">Argument</a> *&amp;glowa)</td></tr>
+<tr class="memdesc:a75aee9ee6241c29f74b48c089075604d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, która czyści stos.  <a href="lista_8h.html#a75aee9ee6241c29f74b48c089075604d">Więcej...</a><br /></td></tr>
+<tr class="separator:a75aee9ee6241c29f74b48c089075604d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a096a261aeb8900a7002abbbd93fed0bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a096a261aeb8900a7002abbbd93fed0bd">usunElementZeStosu</a> (<a class="el" href="struct_argument.html">Argument</a> *&amp;glowa)</td></tr>
+<tr class="memdesc:a096a261aeb8900a7002abbbd93fed0bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja, która usuwa pierwszy element ze stosu.  <a href="lista_8h.html#a096a261aeb8900a7002abbbd93fed0bd">Więcej...</a><br /></td></tr>
+<tr class="separator:a096a261aeb8900a7002abbbd93fed0bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2126f409224c931f76acc93e67d36254"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="lista_8h.html#a2126f409224c931f76acc93e67d36254">wypiszStos</a> (<a class="el" href="struct_argument.html">Argument</a> *glowa)</td></tr>
+<tr class="memdesc:a2126f409224c931f76acc93e67d36254"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja wypisująca stos.  <a href="lista_8h.html#a2126f409224c931f76acc93e67d36254">Więcej...</a><br /></td></tr>
+<tr class="separator:a2126f409224c931f76acc93e67d36254"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Plik nagłówkowy modułu Lista. </p>
+<p>Zawiera on deklaracje funkcji potrzebnych do działania na listach. </p>
+</div><h2 class="groupheader">Dokumentacja funkcji</h2>
+<a id="a38f465924dd6bc7e811e640c07e5f3af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38f465924dd6bc7e811e640c07e5f3af">&#9670;&nbsp;</a></span>dodajElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void dodajElement </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_argument.html">Argument</a> *&amp;&#160;</td>
+          <td class="paramname"><em>glowa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>liczba</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja, dodaje element do stosu. </p>
+<p>Deklaracja funkcji, która ma dodać nowy element do stosu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów </td></tr>
+    <tr><td class="paramname">liczba</td><td>wartość liczbowa nowego elementu</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która dodaje nowy element do stosu </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów </td></tr>
+    <tr><td class="paramname">liczba</td><td>wartość liczbowa nowego elementu </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2c26d80a5bfa2e65280d9194e944a2c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2c26d80a5bfa2e65280d9194e944a2c7">&#9670;&nbsp;</a></span>stworzStos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="struct_argument.html">Argument</a>* stworzStos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja, która tworzy stos. </p>
+<p>Deklaracja funkcji, która ma zaalokować pamięć na głowę stosu. </p><dl class="section return"><dt>Zwraca</dt><dd>stos wskaźnik do pierwszego elementu stosu </dd></dl>
+
+</div>
+</div>
+<a id="a096a261aeb8900a7002abbbd93fed0bd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a096a261aeb8900a7002abbbd93fed0bd">&#9670;&nbsp;</a></span>usunElementZeStosu()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usunElementZeStosu </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_argument.html">Argument</a> *&amp;&#160;</td>
+          <td class="paramname"><em>glowa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja, która usuwa pierwszy element ze stosu. </p>
+<p>Deklaracja funkcji, która ma usunąć pierwszy argument ze stosu, czyli głowę listy dynamicznej. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która usuwa pierwszy argument ze stosu, czyli głowę listy dynamicznej. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c27b0720bd3a9812dca8ad12c235541"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c27b0720bd3a9812dca8ad12c235541">&#9670;&nbsp;</a></span>usunWszystkieZmienne()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usunWszystkieZmienne </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_zmienna.html">Zmienna</a> *&amp;&#160;</td>
+          <td class="paramname"><em>w</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja usuwająca wszystkie zmienne. </p>
+<p>Deklaracja funkcji, która usuwa wszystkie elementy listy zmiennych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;w</td><td>wskaźnik typu <a class="el" href="struct_zmienna.html" title="Element listy dynamicznej.">Zmienna</a></td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która usuwa wszystkie elementy listy zmiennych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;w</td><td>wskaźnik typu <a class="el" href="struct_zmienna.html" title="Element listy dynamicznej.">Zmienna</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2a3468ba94e2a583940d5bb01d2c6438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a3468ba94e2a583940d5bb01d2c6438">&#9670;&nbsp;</a></span>usunZmienna()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void usunZmienna </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_zmienna.html">Zmienna</a> *&amp;&#160;</td>
+          <td class="paramname"><em>glowa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja usuwająca zmienną </p>
+<p>Deklaracja funkcji, która ma ma usuwać wybraną zmienna. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;w</td><td>wskaźnik typu <a class="el" href="struct_zmienna.html" title="Element listy dynamicznej.">Zmienna</a> </td></tr>
+    <tr><td class="paramname">i</td><td>nr zmiennej</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która usuwa wybraną zmienna. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;w</td><td>wskaźnik typu <a class="el" href="struct_zmienna.html" title="Element listy dynamicznej.">Zmienna</a> </td></tr>
+    <tr><td class="paramname">i</td><td>nr zmiennej </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a75aee9ee6241c29f74b48c089075604d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a75aee9ee6241c29f74b48c089075604d">&#9670;&nbsp;</a></span>wyczyscStos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wyczyscStos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_argument.html">Argument</a> *&amp;&#160;</td>
+          <td class="paramname"><em>glowa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja, która czyści stos. </p>
+<p>Deklaracja funkcji, która ma usunąć wszystkie elementy ze stosu, czyli listy dynamicznej jednokierunowej argumentów </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która usuwa wszystkie elementy ze stosu, czyli listy dynamicznej jednokierunowej argumentów </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a335e04d3e32b998148bfc5f0298e5ada"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a335e04d3e32b998148bfc5f0298e5ada">&#9670;&nbsp;</a></span>wypiszListeZmiennych()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wypiszListeZmiennych </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_zmienna.html">Zmienna</a> *&#160;</td>
+          <td class="paramname"><em>w</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>i</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypisująca listę zmiennych. </p>
+<p>Deklaracja funkcji, która wypisuje wszystkie elementy listy zmiennych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*w</td><td>wskaźnik typu <a class="el" href="struct_zmienna.html" title="Element listy dynamicznej.">Zmienna</a> </td></tr>
+    <tr><td class="paramname">i</td><td>liczba do numeracji kolejnych elementów listy</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która wypisuje wszystkie elementy listy zmiennych. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*w</td><td>wskaźnik typu <a class="el" href="struct_zmienna.html" title="Element listy dynamicznej.">Zmienna</a> </td></tr>
+    <tr><td class="paramname">i</td><td>liczba do numeracji kolejnych elementów listy </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a2126f409224c931f76acc93e67d36254"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2126f409224c931f76acc93e67d36254">&#9670;&nbsp;</a></span>wypiszStos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void wypiszStos </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_argument.html">Argument</a> *&#160;</td>
+          <td class="paramname"><em>glowa</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Funkcja wypisująca stos. </p>
+<p>Deklaracja funkcji, która ma wypisać listę dynamiczną jednokierunkową argumentów. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Definicja funkcji, która wypisuje listę dynamiczną jednokierunkową argumentów. </p><dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">*&amp;glowa</td><td>wskaźnik do głowy listy argumentów </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>

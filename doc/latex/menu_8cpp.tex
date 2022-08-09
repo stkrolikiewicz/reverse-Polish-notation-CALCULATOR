@@ -1,0 +1,54 @@
+\hypertarget{menu_8cpp}{}\doxysection{Dokumentacja pliku menu.\+cpp}
+\label{menu_8cpp}\index{menu.cpp@{menu.cpp}}
+
+
+Plik impementacji modułu Menu.  
+
+
+{\ttfamily \#include \char`\"{}menu.\+h\char`\"{}}\newline
+Wykres zależności załączania dla menu.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{menu_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu_8cpp_a2a0e843767aeea4f433a28b9c54f573a}{menu}} ()
+\begin{DoxyCompactList}\small\item\em Menu. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik impementacji modułu Menu. 
+
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{menu_8cpp_a2a0e843767aeea4f433a28b9c54f573a}\label{menu_8cpp_a2a0e843767aeea4f433a28b9c54f573a}} 
+\index{menu.cpp@{menu.cpp}!menu@{menu}}
+\index{menu@{menu}!menu.cpp@{menu.cpp}}
+\doxysubsubsection{\texorpdfstring{menu()}{menu()}}
+{\footnotesize\ttfamily void menu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Menu. 
+
+Funkcja, która nawiguje po programie. Daje do wyboru 3 opcje\+: \begin{DoxyItemize}
+\item 1. Wprowadź lub edytuj i następnie oblicz wyrazenie. \item 2. Wprowadź lub edytuj zmienne. \item 3. Zakończ działanie programu. \end{DoxyItemize}
+\mbox{\hyperlink{struct_zmienna}{Zmienna}} b, która będzie przechowywała napis wprowadzany przez użytkownika
+
+\mbox{\hyperlink{struct_zmienna}{Zmienna}} a, która pobiera pierwszy znak z napisu b
+
+\mbox{\hyperlink{struct_zmienna}{Zmienna}} counter ma na celu zliczanie powtórzeń pętli {\bfseries{do}} {\bfseries{\{}}...\} {\bfseries{while}} {\bfseries{}}(...) tak aby pomóc użytkownikowi wpisanie oczekiwanej wartości zmiennej b
+
+Pętla {\bfseries{do}} {\bfseries{\{}}...\} {\bfseries{while}} {\bfseries{}}(...) która ma celu doprowadzenie użytkownika do wyboru jedej z trzech opcji. Pętla powtarza się do momentu wpisania napisu, którego pierwszy znak będzie równy 1, 2 lub 3.
+
+W przypadku, gdy pierwszy znak wpisanego napisu po kolejny nie jest jedną z opcji, wyświetla sie komunikat, ze wpisywana wartość jest nepoprawna.
+
+Po poprawnym wybraniu opcji licznik powtórzeń się zeruje.
+
+Instrukcja {\bfseries{switch}} {\bfseries{}}... {\bfseries{case}} która zależy od zmiennej a

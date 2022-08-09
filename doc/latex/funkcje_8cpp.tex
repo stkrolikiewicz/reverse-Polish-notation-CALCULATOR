@@ -1,0 +1,273 @@
+\hypertarget{funkcje_8cpp}{}\doxysection{Dokumentacja pliku funkcje.\+cpp}
+\label{funkcje_8cpp}\index{funkcje.cpp@{funkcje.cpp}}
+
+
+Plik implementacji modułu Funkcje.  
+
+
+{\ttfamily \#include \char`\"{}funkcje.\+h\char`\"{}}\newline
+Wykres zależności załączania dla funkcje.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{funkcje_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{funkcje_8cpp_ab28347e597836017600e46d0e744c901}{modyfikuj\+Wyrazenie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja modyfikująca wyrazenie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_afb6dff831c82de66b589000673f71044}{oblicz\+Wyrazenie}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca wyrazenie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_aa44dca3a047db3c6375e73df02cfe76f}{modyfikuj\+Zmienne}} ()
+\begin{DoxyCompactList}\small\item\em Funkcja modyfikująca zmienne. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{funkcje_8cpp_a92de69e02f915491760707726845d5a6}{zamien\+String\+Na\+Double}} (string napis)
+\begin{DoxyCompactList}\small\item\em Zamień napis na liczbę \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_ae62a54c8fb04a027c78edc4776d147b8}{odloz\+Na\+Stos}} (double x)
+\begin{DoxyCompactList}\small\item\em Funkcja odkłada liczbę na stos. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{funkcje_8cpp_a0170a5d85f69aedf46f6c3994845f697}{jaki\+Operator}} (char a, bool \&zero)
+\begin{DoxyCompactList}\small\item\em Funkcja, która interpetuje operator. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a09839fecc501772fdcd50e378105a5c3}{czy\+To\+Zmienna}} (bool \&f, bool \&t, double \&val, char T\mbox{[}$\,$\mbox{]}, int n, int \&i, double \&wynik)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza, czy zawarty w wyrażeniu ciąg znaków jest zmienną \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a8886dea5d9a7e11f3c0cfa36f44581af}{czy\+Sin\+Cos}} (bool \&f, string \&name, char T\mbox{[}$\,$\mbox{]}, int n, int i)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza, czy zawarty w wyrazeniu ciąg znaków jest operatorem sinus lub cosinus. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{funkcje_8cpp_afc093d5e8f58a67e2947091bedade8d8}{oblicz\+Sin\+Cos}} (string name)
+\begin{DoxyCompactList}\small\item\em Funkcja obliczająca funkcje trygonometryczną \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_ad209b9e5b00b19ac864b3c25674ef5d0}{dodaj\+Zmienna}} (string name, double value, bool \&c)
+\begin{DoxyCompactList}\small\item\em Funkcja dodająca zmienne. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{funkcje_8cpp_a10d3d37d1a02817859b9dcf3d2957154}{edytuj\+Zmienna}} (int j)
+\begin{DoxyCompactList}\small\item\em Funkcja edytująca zmienne. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Zmienne}
+\begin{DoxyCompactItemize}
+\item 
+const string \mbox{\hyperlink{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}{nazwa\+\_\+pliku}} = \char`\"{}wyrazenie.\+txt\char`\"{}
+\begin{DoxyCompactList}\small\item\em ustalanie sciezki do pliku przechowującego wyrazenie \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_argument}{Argument}} $\ast$ \mbox{\hyperlink{funkcje_8cpp_aa13486267c820fd6fb18841e9e312d46}{stos}} = nullptr
+\begin{DoxyCompactList}\small\item\em inicjowanie stosu \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_zmienna}{Zmienna}} $\ast$ \mbox{\hyperlink{funkcje_8cpp_a5518884d529ad2d192f73c79439860d9}{lista\+Zmiennych}} = nullptr
+\begin{DoxyCompactList}\small\item\em inicjowanie listy dynamicznej jednokierunkowej zmiennych \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Opis szczegółowy}
+Plik implementacji modułu Funkcje. 
+
+Zawiera on definicje najbardziej istotnych funkcji programu, służących do obliczania i edytowania wyrażenia oraz tworzenia i modyfikacji zmiennych. 
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{funkcje_8cpp_a8886dea5d9a7e11f3c0cfa36f44581af}\label{funkcje_8cpp_a8886dea5d9a7e11f3c0cfa36f44581af}} 
+\index{funkcje.cpp@{funkcje.cpp}!czySinCos@{czySinCos}}
+\index{czySinCos@{czySinCos}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{czySinCos()}{czySinCos()}}
+{\footnotesize\ttfamily void czy\+Sin\+Cos (\begin{DoxyParamCaption}\item[{bool \&}]{f,  }\item[{string \&}]{name,  }\item[{char}]{T\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdza, czy zawarty w wyrazeniu ciąg znaków jest operatorem sinus lub cosinus. 
+
+Definicja funkcji, która określa, czy dany ciąg znaków jest operatorem sinus lub cosinus. 
+\begin{DoxyParams}{Parametry}
+{\em \&f} & flaga, która informuje, czy badany ciąg znaków w wyrażeniu jest sinusem lub cosinusem \\
+\hline
+{\em \&name} & zmienna, która przechowuje wartość znalezionego operatora (sin lub cos) \\
+\hline
+{\em T\mbox{[}$\,$\mbox{]}} & talica, która przechowuje kolejne znaki wyrazenia \\
+\hline
+{\em n} & rozmiar tablicy \\
+\hline
+{\em i} & nr pierwszego wyrazu ciagu \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a09839fecc501772fdcd50e378105a5c3}\label{funkcje_8cpp_a09839fecc501772fdcd50e378105a5c3}} 
+\index{funkcje.cpp@{funkcje.cpp}!czyToZmienna@{czyToZmienna}}
+\index{czyToZmienna@{czyToZmienna}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{czyToZmienna()}{czyToZmienna()}}
+{\footnotesize\ttfamily void czy\+To\+Zmienna (\begin{DoxyParamCaption}\item[{bool \&}]{f,  }\item[{bool \&}]{t,  }\item[{double \&}]{val,  }\item[{char}]{T\mbox{[}$\,$\mbox{]},  }\item[{int}]{n,  }\item[{int \&}]{i,  }\item[{double \&}]{wynik }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdza, czy zawarty w wyrażeniu ciąg znaków jest zmienną 
+
+Definicja funkcji, która sprawdzaa czy zawarte w wyrażeniu ciągi wyrazów są zmiennymi wprowadzonymi wcześniej przez użytkownika. 
+\begin{DoxyParams}{Parametry}
+{\em \&f} & flaga, która daje informacje, czy istnieje zmienna o podanej nazwie \\
+\hline
+{\em \&t} & \\
+\hline
+{\em \&val} & \\
+\hline
+{\em T\mbox{[}$\,$\mbox{]}} & tablica znakow, które połączeniu tworzą szukaną nazwę \\
+\hline
+{\em n} & rozmiar tablicy \\
+\hline
+{\em \&i} & nr pierwszego znaku ciągu wyrazów w tablicy \\
+\hline
+{\em \&wynik} & zapisuje wynik, w przypadku, gdy ciąg jest sinusem lub cosinusem \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_ad209b9e5b00b19ac864b3c25674ef5d0}\label{funkcje_8cpp_ad209b9e5b00b19ac864b3c25674ef5d0}} 
+\index{funkcje.cpp@{funkcje.cpp}!dodajZmienna@{dodajZmienna}}
+\index{dodajZmienna@{dodajZmienna}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{dodajZmienna()}{dodajZmienna()}}
+{\footnotesize\ttfamily void dodaj\+Zmienna (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{double}]{value,  }\item[{bool \&}]{c }\end{DoxyParamCaption})}
+
+
+
+Funkcja dodająca zmienne. 
+
+Definicja funkcji, która umożliwia dodawanie nowych zmiennych. 
+\begin{DoxyParams}{Parametry}
+{\em name} & nazwa nowej zmienej \\
+\hline
+{\em value} & wartosc liczbowa nowej zmiennej \\
+\hline
+{\em \&c} & flaga, która informuje, czy zmienna o podanej nazwie już istnieje \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a10d3d37d1a02817859b9dcf3d2957154}\label{funkcje_8cpp_a10d3d37d1a02817859b9dcf3d2957154}} 
+\index{funkcje.cpp@{funkcje.cpp}!edytujZmienna@{edytujZmienna}}
+\index{edytujZmienna@{edytujZmienna}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{edytujZmienna()}{edytujZmienna()}}
+{\footnotesize\ttfamily void edytuj\+Zmienna (\begin{DoxyParamCaption}\item[{int}]{j }\end{DoxyParamCaption})}
+
+
+
+Funkcja edytująca zmienne. 
+
+Definicja funkcji, która edytuje wybraną zmienną. 
+\begin{DoxyParams}{Parametry}
+{\em i} & nr zmiennej \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a0170a5d85f69aedf46f6c3994845f697}\label{funkcje_8cpp_a0170a5d85f69aedf46f6c3994845f697}} 
+\index{funkcje.cpp@{funkcje.cpp}!jakiOperator@{jakiOperator}}
+\index{jakiOperator@{jakiOperator}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{jakiOperator()}{jakiOperator()}}
+{\footnotesize\ttfamily double jaki\+Operator (\begin{DoxyParamCaption}\item[{char}]{a,  }\item[{bool \&}]{zero }\end{DoxyParamCaption})}
+
+
+
+Funkcja, która interpetuje operator. 
+
+Definicja funkcji, która interpretuje jaki opersator matematyczny spośród \textquotesingle{}+\textquotesingle{}, \textquotesingle{}-\/\textquotesingle{}, \textquotesingle{}/\textquotesingle{}, \textquotesingle{}$\ast$\textquotesingle{} lub \textquotesingle{}$^\wedge$\textquotesingle{} ma być użyty. 
+\begin{DoxyParams}{Parametry}
+{\em a} & znak, który ma zostać zinterpretowany \\
+\hline
+{\em \&zero} & flaga, która ma wskazywać, czy operator dzielenie ma dzielić przez zero \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+liczba zwracana jako wartosc wyniku dzialania z uzyciem operatora 
+\end{DoxyReturn}
+\mbox{\Hypertarget{funkcje_8cpp_ab28347e597836017600e46d0e744c901}\label{funkcje_8cpp_ab28347e597836017600e46d0e744c901}} 
+\index{funkcje.cpp@{funkcje.cpp}!modyfikujWyrazenie@{modyfikujWyrazenie}}
+\index{modyfikujWyrazenie@{modyfikujWyrazenie}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{modyfikujWyrazenie()}{modyfikujWyrazenie()}}
+{\footnotesize\ttfamily void modyfikuj\+Wyrazenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja modyfikująca wyrazenie. 
+
+Definicja funkcji, która daje możliwość modyfikacji wyrazenia zapisanego w pliku tekstowym, które następnie jest obliczane. \mbox{\Hypertarget{funkcje_8cpp_aa44dca3a047db3c6375e73df02cfe76f}\label{funkcje_8cpp_aa44dca3a047db3c6375e73df02cfe76f}} 
+\index{funkcje.cpp@{funkcje.cpp}!modyfikujZmienne@{modyfikujZmienne}}
+\index{modyfikujZmienne@{modyfikujZmienne}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{modyfikujZmienne()}{modyfikujZmienne()}}
+{\footnotesize\ttfamily void modyfikuj\+Zmienne (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja modyfikująca zmienne. 
+
+Definicja funkcji, daje możliwość modyfikacji lub/i dodawania zmienncyh przez użytkownika. \mbox{\Hypertarget{funkcje_8cpp_afc093d5e8f58a67e2947091bedade8d8}\label{funkcje_8cpp_afc093d5e8f58a67e2947091bedade8d8}} 
+\index{funkcje.cpp@{funkcje.cpp}!obliczSinCos@{obliczSinCos}}
+\index{obliczSinCos@{obliczSinCos}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{obliczSinCos()}{obliczSinCos()}}
+{\footnotesize\ttfamily double oblicz\+Sin\+Cos (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczająca funkcje trygonometryczną 
+
+Definicja funkcji, która oblicza sinus lub cosinus wartości. 
+\begin{DoxyParams}{Parametry}
+{\em name} & nazwa funkcji trygonometrycznej \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_afb6dff831c82de66b589000673f71044}\label{funkcje_8cpp_afb6dff831c82de66b589000673f71044}} 
+\index{funkcje.cpp@{funkcje.cpp}!obliczWyrazenie@{obliczWyrazenie}}
+\index{obliczWyrazenie@{obliczWyrazenie}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{obliczWyrazenie()}{obliczWyrazenie()}}
+{\footnotesize\ttfamily void oblicz\+Wyrazenie (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Funkcja obliczająca wyrazenie. 
+
+Definicja funkcji, która oblicza wyrażenie zapisane w pliku tekstowym. \mbox{\Hypertarget{funkcje_8cpp_ae62a54c8fb04a027c78edc4776d147b8}\label{funkcje_8cpp_ae62a54c8fb04a027c78edc4776d147b8}} 
+\index{funkcje.cpp@{funkcje.cpp}!odlozNaStos@{odlozNaStos}}
+\index{odlozNaStos@{odlozNaStos}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{odlozNaStos()}{odlozNaStos()}}
+{\footnotesize\ttfamily void odloz\+Na\+Stos (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})}
+
+
+
+Funkcja odkłada liczbę na stos. 
+
+Definicja funkcji, która odkłada podaną wartość (double) na stos, tak aby w późniejszym etapie wartość została pobrana zmanipulowana przed następujący po niej operator. 
+\begin{DoxyParams}{Parametry}
+{\em x} & liczba odkladana na stos jako wartos nowego elementu listy argumentów \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{funkcje_8cpp_a92de69e02f915491760707726845d5a6}\label{funkcje_8cpp_a92de69e02f915491760707726845d5a6}} 
+\index{funkcje.cpp@{funkcje.cpp}!zamienStringNaDouble@{zamienStringNaDouble}}
+\index{zamienStringNaDouble@{zamienStringNaDouble}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{zamienStringNaDouble()}{zamienStringNaDouble()}}
+{\footnotesize\ttfamily double zamien\+String\+Na\+Double (\begin{DoxyParamCaption}\item[{string}]{napis }\end{DoxyParamCaption})}
+
+
+
+Zamień napis na liczbę 
+
+Definicja funkcji, która zamienia napis przedstawiający jakąś liczbę na zmienną typu double. 
+\begin{DoxyParams}{Parametry}
+{\em napis} & reprezentuje ciąg cyfr, ale jeszcze nie jest liczbą \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+x liczba, która jest już typu double 
+\end{DoxyReturn}
+
+
+\doxysubsection{Dokumentacja zmiennych}
+\mbox{\Hypertarget{funkcje_8cpp_a5518884d529ad2d192f73c79439860d9}\label{funkcje_8cpp_a5518884d529ad2d192f73c79439860d9}} 
+\index{funkcje.cpp@{funkcje.cpp}!listaZmiennych@{listaZmiennych}}
+\index{listaZmiennych@{listaZmiennych}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{listaZmiennych}{listaZmiennych}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_zmienna}{Zmienna}}$\ast$ lista\+Zmiennych = nullptr}
+
+
+
+inicjowanie listy dynamicznej jednokierunkowej zmiennych 
+
+\mbox{\Hypertarget{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}\label{funkcje_8cpp_aba7db9b08b34a1a082e75efc94ea0d72}} 
+\index{funkcje.cpp@{funkcje.cpp}!nazwa\_pliku@{nazwa\_pliku}}
+\index{nazwa\_pliku@{nazwa\_pliku}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{nazwa\_pliku}{nazwa\_pliku}}
+{\footnotesize\ttfamily const string nazwa\+\_\+pliku = \char`\"{}wyrazenie.\+txt\char`\"{}}
+
+
+
+ustalanie sciezki do pliku przechowującego wyrazenie 
+
+\mbox{\Hypertarget{funkcje_8cpp_aa13486267c820fd6fb18841e9e312d46}\label{funkcje_8cpp_aa13486267c820fd6fb18841e9e312d46}} 
+\index{funkcje.cpp@{funkcje.cpp}!stos@{stos}}
+\index{stos@{stos}!funkcje.cpp@{funkcje.cpp}}
+\doxysubsubsection{\texorpdfstring{stos}{stos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_argument}{Argument}}$\ast$ stos = nullptr}
+
+
+
+inicjowanie stosu 
+

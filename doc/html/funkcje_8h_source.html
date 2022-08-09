@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Kalkulator wyrażeń zapisanych w ONP: Plik źródłowy funkcje.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Kalkulator wyrażeń zapisanych w ONP
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Szukaj','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Szukaj');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">funkcje.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="funkcje_8h.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef FUNKCJE_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define FUNKCJE_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pliki_8h.html">pliki.h</a>&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="interfejs_8h.html">interfejs.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="lista_8h.html">lista.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="menu_8h.html">menu.h</a>&quot;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#ab28347e597836017600e46d0e744c901">modyfikujWyrazenie</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#afb6dff831c82de66b589000673f71044">obliczWyrazenie</a>();</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#aa44dca3a047db3c6375e73df02cfe76f">modyfikujZmienne</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keywordtype">double</span> <a class="code" href="funkcje_8h.html#a92de69e02f915491760707726845d5a6">zamienStringNaDouble</a>(<span class="keywordtype">string</span> napis);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#ae62a54c8fb04a027c78edc4776d147b8">odlozNaStos</a>(<span class="keywordtype">double</span> x);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keywordtype">double</span> <a class="code" href="funkcje_8h.html#a0170a5d85f69aedf46f6c3994845f697">jakiOperator</a>(<span class="keywordtype">char</span> a, <span class="keywordtype">bool</span> &amp;zero);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#a09839fecc501772fdcd50e378105a5c3">czyToZmienna</a>(<span class="keywordtype">bool</span> &amp;f, <span class="keywordtype">bool</span> &amp;t, <span class="keywordtype">double</span> &amp;val, <span class="keywordtype">char</span> T[], <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> &amp;i, <span class="keywordtype">double</span> &amp;wynik);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#a8886dea5d9a7e11f3c0cfa36f44581af">czySinCos</a>(<span class="keywordtype">bool</span> &amp;f, <span class="keywordtype">string</span> &amp;name, <span class="keywordtype">char</span> T[], <span class="keywordtype">int</span> n, <span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keywordtype">double</span> <a class="code" href="funkcje_8h.html#afc093d5e8f58a67e2947091bedade8d8">obliczSinCos</a>(<span class="keywordtype">string</span> name);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#ad209b9e5b00b19ac864b3c25674ef5d0">dodajZmienna</a>(<span class="keywordtype">string</span> name,<span class="keywordtype">double</span> value, <span class="keywordtype">bool</span> &amp;c);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;<span class="keywordtype">void</span> <a class="code" href="funkcje_8h.html#ac760585c1290519fda8da5bc05661559">edytujZmienna</a>(<span class="keywordtype">int</span> i);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="preprocessor">#endif </span><span class="comment">// FUNKCJE_H</span></div>
+<div class="ttc" id="afunkcje_8h_html_a0170a5d85f69aedf46f6c3994845f697"><div class="ttname"><a href="funkcje_8h.html#a0170a5d85f69aedf46f6c3994845f697">jakiOperator</a></div><div class="ttdeci">double jakiOperator(char a, bool &amp;zero)</div><div class="ttdoc">Funkcja, która interpetuje operator.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:358</div></div>
+<div class="ttc" id="afunkcje_8h_html_a09839fecc501772fdcd50e378105a5c3"><div class="ttname"><a href="funkcje_8h.html#a09839fecc501772fdcd50e378105a5c3">czyToZmienna</a></div><div class="ttdeci">void czyToZmienna(bool &amp;f, bool &amp;t, double &amp;val, char T[], int n, int &amp;i, double &amp;wynik)</div><div class="ttdoc">Funkcja sprawdza, czy zawarty w wyrażeniu ciąg znaków jest zmienną</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:409</div></div>
+<div class="ttc" id="afunkcje_8h_html_a8886dea5d9a7e11f3c0cfa36f44581af"><div class="ttname"><a href="funkcje_8h.html#a8886dea5d9a7e11f3c0cfa36f44581af">czySinCos</a></div><div class="ttdeci">void czySinCos(bool &amp;f, string &amp;name, char T[], int n, int i)</div><div class="ttdoc">Funkcja sprawdza, czy zawarty w wyrazeniu ciąg znaków jest operatorem sinus lub cosinus.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:453</div></div>
+<div class="ttc" id="afunkcje_8h_html_a92de69e02f915491760707726845d5a6"><div class="ttname"><a href="funkcje_8h.html#a92de69e02f915491760707726845d5a6">zamienStringNaDouble</a></div><div class="ttdeci">double zamienStringNaDouble(string napis)</div><div class="ttdoc">Zamień napis na liczbę</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:289</div></div>
+<div class="ttc" id="afunkcje_8h_html_aa44dca3a047db3c6375e73df02cfe76f"><div class="ttname"><a href="funkcje_8h.html#aa44dca3a047db3c6375e73df02cfe76f">modyfikujZmienne</a></div><div class="ttdeci">void modyfikujZmienne()</div><div class="ttdoc">Funkcja modyfikująca zmienne.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:154</div></div>
+<div class="ttc" id="afunkcje_8h_html_ab28347e597836017600e46d0e744c901"><div class="ttname"><a href="funkcje_8h.html#ab28347e597836017600e46d0e744c901">modyfikujWyrazenie</a></div><div class="ttdeci">void modyfikujWyrazenie()</div><div class="ttdoc">Funkcja modyfikująca wyrazenie.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:21</div></div>
+<div class="ttc" id="afunkcje_8h_html_ac760585c1290519fda8da5bc05661559"><div class="ttname"><a href="funkcje_8h.html#ac760585c1290519fda8da5bc05661559">edytujZmienna</a></div><div class="ttdeci">void edytujZmienna(int i)</div><div class="ttdoc">Funkcja edytująca zmienne.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:541</div></div>
+<div class="ttc" id="afunkcje_8h_html_ad209b9e5b00b19ac864b3c25674ef5d0"><div class="ttname"><a href="funkcje_8h.html#ad209b9e5b00b19ac864b3c25674ef5d0">dodajZmienna</a></div><div class="ttdeci">void dodajZmienna(string name, double value, bool &amp;c)</div><div class="ttdoc">Funkcja dodająca zmienne.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:499</div></div>
+<div class="ttc" id="afunkcje_8h_html_ae62a54c8fb04a027c78edc4776d147b8"><div class="ttname"><a href="funkcje_8h.html#ae62a54c8fb04a027c78edc4776d147b8">odlozNaStos</a></div><div class="ttdeci">void odlozNaStos(double x)</div><div class="ttdoc">Funkcja odkłada liczbę na stos.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:347</div></div>
+<div class="ttc" id="afunkcje_8h_html_afb6dff831c82de66b589000673f71044"><div class="ttname"><a href="funkcje_8h.html#afb6dff831c82de66b589000673f71044">obliczWyrazenie</a></div><div class="ttdeci">void obliczWyrazenie()</div><div class="ttdoc">Funkcja obliczająca wyrazenie.</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:50</div></div>
+<div class="ttc" id="afunkcje_8h_html_afc093d5e8f58a67e2947091bedade8d8"><div class="ttname"><a href="funkcje_8h.html#afc093d5e8f58a67e2947091bedade8d8">obliczSinCos</a></div><div class="ttdeci">double obliczSinCos(string name)</div><div class="ttdoc">Funkcja obliczająca funkcje trygonometryczną</div><div class="ttdef"><b>Definition:</b> funkcje.cpp:472</div></div>
+<div class="ttc" id="ainterfejs_8h_html"><div class="ttname"><a href="interfejs_8h.html">interfejs.h</a></div><div class="ttdoc">Plik nagłówkowy modułu Interfejs.</div></div>
+<div class="ttc" id="alista_8h_html"><div class="ttname"><a href="lista_8h.html">lista.h</a></div><div class="ttdoc">Plik nagłówkowy modułu Lista.</div></div>
+<div class="ttc" id="amenu_8h_html"><div class="ttname"><a href="menu_8h.html">menu.h</a></div><div class="ttdoc">Plik nagłówkowy modułu menu.</div></div>
+<div class="ttc" id="apliki_8h_html"><div class="ttname"><a href="pliki_8h.html">pliki.h</a></div><div class="ttdoc">Plik nagłówkowy modułu Pliki.</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Wygenerowano przez&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
